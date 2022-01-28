@@ -1,8 +1,11 @@
 #include "linearSystemClass.h"
 #include <iostream>
 
-linearSystem::linearSystem(matrix transforation, matrix output) : A(transforation), x(matrix::matrix(transforation.returncolumns(), 1)), b(output)
-{ }
+linearSystem::linearSystem(matrix transformation, matrix output) : A(transformation), b(output)
+{
+	matrix temp(transformation.returncolumns(), 1);
+	x = temp;
+}
 
 void linearSystem::GESolver()
 {
