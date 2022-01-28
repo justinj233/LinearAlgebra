@@ -8,7 +8,7 @@ class linearSystem
 	matrix b;
 
 public:
-	linearSystem(matrix transforation, matrix output);
+	linearSystem(matrix transformation, matrix output);
 
 	void GESolver(); //gaussian elimination solver with partial pivoting
 
